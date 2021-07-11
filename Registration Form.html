@@ -1,0 +1,55 @@
+<html>
+    <head>
+        <link  rel="stylesheet" href="regs.css">
+        <title>Registration Page</title>
+    </head>
+    <body>
+        <div class="container">
+            <div class="card">
+                <div class="inner-box" id="card">
+                    <div class="card-front">
+                        
+                            <form>
+                                
+                        <h2>LOGIN</h2>
+                            <input type="Email" class="input-box" placeholder="Enter Your Email Id" name="email" required>
+                            <input type="password" class="input-box" placeholder="Enter Your Password" name="password" required>
+                            <input type="password" class="input-box" placeholder="Confirm Password" name="Confirm Password" required>
+                            <button type="submit" class="submit-btn"><a href="index2.html">Submit</a></button>
+                            <input type="checkbox"><span>Remember Me</span>
+                        </form>
+                        <button type="button" class="btn" onclick="openRegister()">!'m new Here</button>
+                        <a href="">Forgot Password</a>
+                    </div>
+                    <div class="card-back">
+                        <h2>REGISTER </h2>
+                        <form action="connect.php" method="POST">
+                            <input type="text" class="input-box" placeholder="Enter Your Name" name="name" required>
+                            <input type="mail" class="input-box" placeholder="Enter Your Email Id" name="email" required>
+                            <input type="number" class="input-box" placeholder="Enter Your Phone Number" name="Phone Number" required>
+                            <input type="number" class="input-box" placeholder="Enter Your Passing Year" name="year" required>
+                            <input type="text" class="input-box" placeholder="Enter Your Branch" name="branch" required>
+                            <input type="password" class="input-box" placeholder="Enter Your Password" name="Password" required>
+                            <input type="password" class="input-box" placeholder="Confirm Password" name="confirm password" required>
+                            <button type="submit" class="submit-btn">Submit</button>
+                            
+                           
+                                <button type="button" class="btn" onclick="openLogin()"> I Have an account</button>
+                            </form>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <script>
+            var card=document.getElementById("card")
+            function openRegister(){
+                card.style.transform="rotateY(-180deg)";
+
+            }
+            function openLogin(){
+                card.style.transform="rotateY(0deg)";
+            }
+        </script>
+    </body>
+</html>
